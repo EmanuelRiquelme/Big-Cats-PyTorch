@@ -7,9 +7,9 @@ from torch.utils.data import DataLoader
 import os
 from utils import validation,save_model,load_model
 from tqdm import trange
-from dataset import pets
+from dataset import Big-Cats
 
-dataset = pets() 
+dataset = Big-Cats() 
 train_size = round(int(len(dataset)*.8))
 test_size = len(dataset)-train_size
 train_set, val_set = torch.utils.data.random_split(dataset, [train_size,test_size])
