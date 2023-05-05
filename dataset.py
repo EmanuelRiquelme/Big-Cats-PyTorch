@@ -4,7 +4,7 @@ import os
 from  PIL import Image
 from torchvision import transforms
 
-class Big-Cats(Dataset):
+class Big_Cats(Dataset):
     def __init__(self, root_dir = 'animals',transform = False):
         self.root_dir = root_dir
         self.labels = self.__getlabels__()
